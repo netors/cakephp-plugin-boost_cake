@@ -218,6 +218,7 @@ class BoostCakeFormHelper extends FormHelper {
 						$option = preg_replace('/(<label.*?)(>)/', '$1 class="' . $attributes['class'] . '"$2', $option);
 					}
 				}
+                $option = preg_replace('/class="selected"/','', $option);
 				$selectOptions[$key] = $option;
 			}
 		}

@@ -274,4 +274,7 @@ class BoostCakeFormHelper extends FormHelper {
 		return $out;
 	}
 
+    public function help($string) {
+        return '<p class="help-block"><small class="text-muted">'.$string.'</small></p>';
+    }
 }
